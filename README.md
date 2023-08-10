@@ -5,3 +5,6 @@
 运行环境：VPS，python3，python3-pip
 
 创建应用：https://my.telegram.org/  只要填App title和Short name即可。获得api_id和api_hash。
+# 2.下载Demo小程序到VPS上
+git clone https://github.com/HereNoAg300L/Telegram-Name-Updating.git
+cd Telegram-Name-Updating
