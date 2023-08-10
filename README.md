@@ -1,6 +1,6 @@
 # Telegram-Name-Updating
 每60秒，更新一次用户名（last_name）
-	参考文档：https://docs.telethon.dev/en/stable/
+参考文档：https://docs.telethon.dev/en/stable/
 # 1. 准备
 运行环境：VPS，python3，python3-pip
 
