@@ -2,7 +2,7 @@
 每60秒，更新一次用户名（last_name）
 
 参考文档：https://docs.telethon.dev/en/stable/
-# 运行时可能遇到表情问题，请用小号代码更新表情版本
+# 运行时可能遇到表情问题，请用以下代码更新表情版本
     pip install --upgrade emoji==1.6.3
 # 1. 准备
 运行环境：VPS，python3，python3-pip
