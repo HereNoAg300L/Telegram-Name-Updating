@@ -15,25 +15,6 @@
 	python3 tg_username_update.py  
 # 5. api认证和用户登陆
 根据提示输入api_id和api_hash。接着输入手机号和验证码，如果账号开启了二次验，证根据提示再输入二次验证的密码。最后看到 It works! 表明成功了。 默认的是每30秒钟按照一定概率更新一次last name到特定模式。
-# 6. 进程守护
-	mkdir /usr/lib/systemd/system
-service配置(以下代码要全部一起复制粘贴过去)
+# 6. 暂时CTRL+C结束小程序，然后重新挂起来在后台运行(在Telegram-Name-Updating文件夹下运行代码)
+	nohup python3 tg_username_update.py &
 
-	cat > /usr/lib/systemd/system/timebot.service << EOF
-	[Unit]
-	Description=Telegram-Name-Updating daemon
-	After=network.target
-	
-	[Install]
-	WantedBy=multi-user.target
-	
-	[Service]
-	Type=simple
-	WorkingDirectory=/opt/Telegram-Name-Updating
-	ExecStart=/usr/bin/python3 tg_username_update.py
-	Restart=always
-	
-	EOF
-
-# 7. 启动bot
-        systemctl daemon-reload && systemctl start timebot && systemctl enable timebot
